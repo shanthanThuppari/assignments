@@ -1,0 +1,117 @@
+.bg {
+    width: 600px;
+    margin: 30px auto;
+    border-radius: 8px;
+    position: relative;
+}
+
+.img-fluid {
+    width: 100%;
+    border-radius: 8px;
+
+}
+
+.content {
+    position: absolute;
+    bottom: 10px;
+    color: white;
+    left: 15px;
+    right: 15px;
+    z-index: 100;
+}
+
+.tint {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-radius: 8px;
+    z-index: 0;
+    background-color: #0000006e;
+}
+
+.bg2 {
+    width: 400px;
+    margin: 30px auto ;
+    border-radius: 14px;
+    border: 2px solid rgb(0 0 0);
+    position: relative;
+}
+
+.img-fluid2 {
+    width: 100%;
+    height: 50%;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+.content1{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+.promoted {
+    background-color: white;
+    border-radius: 5px;
+    padding: 4px;
+    color: black;
+}
+
+.content2{
+    border: 1px solid #99979796;
+    border-radius: 5px;
+    background-color: #c3c3c3;
+    color: black;
+    position: absolute;
+    bottom: 222px;
+    left: 5px;
+}
+
+.img-fluid3 {
+    padding: 20px;
+    height: 20px;
+}
+
+.desc {
+    margin: 10px;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+.stylePara{
+    font-size: larger;
+    font-weight: bold;
+}
+
+.imgFloat {
+    position: relative;
+}
+
+.img1 {
+    position: absolute;
+    height: 50px;
+    border-radius: 50%;
+    left: 5px;
+}
+.img2 {
+    position: absolute;
+    height: 50px;
+    border-radius: 50%;
+    left: 25px;
+}
+.img3 {
+    position: absolute;
+    height: 50px;
+   left: 40px;
+    border-radius: 50%;
+}
+
+.btn {
+    width: 100%;
+    border-color: blueviolet;
+    border-radius: 20px;
+    padding: 8px 10px;
+    margin: 10px 8px;
+    box-sizing: border-box;
+    color: blueviolet;
+    font-size: large;
+}

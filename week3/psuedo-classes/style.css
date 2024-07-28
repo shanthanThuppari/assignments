@@ -1,0 +1,107 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    object-position: top;
+}
+.bg {
+    height: 480px;
+    width: 900px;
+    margin: auto;
+    background-image: url('bedroom.avif');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.img2{
+    height: 400px;
+    width: 350px;
+    object-fit: contain;
+    filter: brightness(80%);
+    filter: contrast(120%);
+    filter: grayscale(20%);
+    filter: invert(30%);
+    filter: sepia(50%);
+    filter: opacity(90%);
+    filter: hue-rotate(50deg);
+    filter: blur();
+    /* object-position: top; */
+}
+.demo{
+    width: 300px;
+    padding: 10px;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 14px;
+    /* margin: 30px auto; */
+    transform: scale(1.5);
+    transform: rotate(5deg);
+    transform: skew(6deg);
+    transform: translate(50px, 50px)
+}
+
+/* pseudo elements
+    ::first-line
+    ::first-letter
+    ::selection
+    ::after
+    ::before
+
+*/
+h1::first-line{
+    color: red;
+}
+h1::first-letter{
+    color: black
+}
+::selection{
+    background-color: rgb(191, 177, 204);
+    color: white;
+}
+
+h1:hover{
+    color: violet;
+}
+
+input{
+    width: 300px;
+    padding: 8px 16px;
+    border-radius: 16px;
+    font-size: 14px;
+    border: 1px solid lightgray;
+}
+
+input:focus{
+    border: 1px solid green;
+    outline: none;
+}
+button:active{
+    background-color: black;
+    color: white;
+}
+
+p:first-child{
+    color: red;
+}
+
+p:last-child{
+    color: orangered;
+}
+P:nth-child(2n){
+    color: aqua;
+}
+
+.test::after{
+    content: 'after';
+}
+
+.test::before{
+    content: 'before';
+}
+
+.test:not(p){
+   display: block;
+}
