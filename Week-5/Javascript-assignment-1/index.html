@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <script>
+        let shoppingList = [
+            "Milk",
+            "Eggs",
+            "Bread",
+            ["Apples", "Bananas", "Oranges"],
+            ["Potatoes", "Tomatoes", "Onions"]
+        ];
+        let student = {
+            name: "Amit",
+            age: 20,
+            grade: "A",
+            address: {
+                street: "123 Main St",
+                city: "Anytown",
+                country: "India"
+            }
+        };
+
+
+        console.log('Fectching the first item of the groceris - ' + shoppingList[0]);
+
+
+        // Write JavaScript code to add "Carrots" to the end of the grocery items list. Log the updated grocery items list.
+        shoppingList.push('carrots');
+        console.log('After adding carrots at the end of the list, the updated list is - ' + shoppingList);
+
+
+        // Write JavaScript code to remove the last item from the grocery items list. Log the updated grocery items list before and after the removal.
+        console.log("Before removing the last item from the shpping list - " + shoppingList);
+        shoppingList.pop();
+        console.log("After removing the last item from the shopping list - " + shoppingList);
+
+
+        // Write JavaScript code to remove "Tomatoes" and "Onions" from the grocery items list, and add "Cucumbers" and "Bell Peppers" in their place. Log the updated grocery items list before and after the splice operation.
+        console.log("Before removing Tomatoes & Onions and replacing them with Cucumbers & Bell Peppers - " + shoppingList)
+        let veggies = shoppingList[4]
+        veggies.splice(veggies.indexOf('Tomatoes'), 1, 'Cucumbers');
+        veggies.splice(veggies.indexOf('Onions'), 1, 'Bell Pepper');
+        console.log(shoppingList)
+
+
+        // Write JavaScript code to fetch the student's name.
+        console.log(student.name);
+
+        // Write JavaScript code to add a new property phone with the value "123-456-7890" to the student object. Log the updated student object.
+        student.phone = "123-456-7890";
+        console.log(student);
+
+        // Write JavaScript code to remove the grade property from the student object. Log the updated student object before and after the removal.
+        delete student.grade;
+        console.log(student);
+
+        // Write JavaScript code to modify the student's age to 21. Log the updated student object.
+        student.age = 21;
+        console.log(student);
+
+        // Conditionals assignment
+        function numbercheck(number) {
+           return number > 0 ? 'positive' : number < 0 ? 'negative' : 'Zero'
+           /*  if(number > 0) return 'Positive';
+            else if( number < 0) return 'Negative'
+            else return 'Zero'; */
+        }
+        console.log(numbercheck(0));
+        console.log(numbercheck(1));
+        console.log(numbercheck(-1));
+
+
+        // Create a JavaScript program that evaluates a student's grade based on their score. The program should output "A" if the score is between 90 and 100, "B" if it's between 80 and 89, "C" if it's between 70 and 79, "D" if it's between 60 and 69, and "F" if it's below 60.
+
+        let score = 77;
+        if(score >= 90 && score <= 100)
+        console.log('A');
+        else if(score >= 80 && score <=89)
+        console.log('B');
+        else if(score >= 70 && score <=79)
+        console.log('C');
+        else if(score >= 60 && score <=69)
+        console.log('D');
+        else console.log('F')
+
+        // Write a JavaScript function that takes a string as input and returns "Truthy" if the string is not empty, "Falsy" otherwise.
+
+
+    </script>
+</body>
+
+</html>

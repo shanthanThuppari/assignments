@@ -12,6 +12,7 @@ body {
     border-right: 1px solid lightgray;
    
 }
+/* don't follow camel case */
 .navBar {
     padding: 15px;
     padding-left: 30px;
@@ -82,6 +83,7 @@ body {
     /* justify-content: center; */
 }
 
+/* naming convetions needs to be proper/improved */
 .myIgDesc {
     width: 350px;
     display: flex;

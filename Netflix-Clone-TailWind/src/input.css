@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --bg-black-32: rgba(0, 0, 0, 0.332);
+    --bg-img: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+    --email-bg : rgb(22, 22, 22, 0.7);
+    --email-border : 0.5px solid rgb(128, 128, 128, 0.7);
+  }
